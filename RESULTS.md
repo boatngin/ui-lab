@@ -5,10 +5,11 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 ## Part 0
 - Step 0.1, Chrome version: Google Chrome 158.0.8127.88 (Official Build) (arm64)
 - Step 0.3, ChromeDriver version: ChromeDriver 158.0.8127.88 (0cefb18236a23db1ebb6b2bc040fbbaf8cbe759e-refs/branch-heads/8127_36@{#32}), at ~/drivers/chromedriver-mac-arm64/chromedriver, platform mac-arm64
-- Step 0.4, locator of Pizza, Please!:
-- Step 0.4, locator of Excluded tools:
-- Step 0.4, locator of Must be vegetarian:
-- Step 0.4, locator of Custom Pizza Name:
+- Step 0.4, locator of Pizza, Please!: `button[name="pizza-please"]` (in Selenium `By.name("pizza-please")`), finds 1 element
+- Step 0.4, locator of Excluded tools: `select` (the only list on the page, a `select multiple`), finds 1 element
+- Step 0.4, locator of Must be vegetarian: `#default-checkbox`, finds 1 element (its label reads Must be vegetarian)
+- Step 0.4, locator of Custom Pizza Name: `input#pizza-name`, finds 1 element. `#pizza-name` alone finds 2 after Pizza, Please!, because the heading of the answer has the same id
+- Step 0.4, `$$("#floating_filled").length` gave 3, and `//label[normalize-space()='Max Calories per Slice']/preceding-sibling::input` finds exactly 1 element
 - Step 0.5, pizza name, tool and calories of the run by hand:
 
 | Step | Actual result | Pass or fail |
