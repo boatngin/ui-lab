@@ -20,3 +20,4 @@ QP-01 A Custom Pizza Reaches The Admin List
     Capture Element Screenshot    id:recommendations    qp01-step4-pizza.png
     Rate The Pizza Without Logging In
     Capture Page Screenshot    qp01-step5-login-needed.png
+    Log In As Admin    admin    admin
