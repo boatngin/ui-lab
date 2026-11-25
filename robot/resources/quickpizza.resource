@@ -25,3 +25,15 @@ Turn On Advanced
     Element Should Be Visible    css:select
     Element Should Be Visible    id:default-checkbox
     Element Should Be Visible    css:input#pizza-name
+
+Fill In The Pizza Request
+    [Documentation]    QP-01 step 3. Type the restrictions and the name.
+    [Arguments]    ${calories}    ${tool}    ${name}
+    Input Text    ${MAX CALORIES}    ${calories}
+    Select From List By Label    css:select    ${tool}
+    Select Checkbox    id:default-checkbox
+    Input Text    css:input#pizza-name    ${name}
+    Textfield Value Should Be    ${MAX CALORIES}    ${calories}
+    List Selection Should Be    css:select    ${tool}
+    Checkbox Should Be Selected    id:default-checkbox
+    Textfield Value Should Be    css:input#pizza-name    ${name}

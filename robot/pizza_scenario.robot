@@ -2,6 +2,7 @@
 Documentation     Test case QP-01, A custom pizza reaches the admin list.
 Resource          resources/quickpizza.resource
 Test Teardown     Close Browser
+Library           DateTime
 
 *** Test Cases ***
 QP-01 A Custom Pizza Reaches The Admin List
@@ -9,3 +10,7 @@ QP-01 A Custom Pizza Reaches The Admin List
     ...    keeps them, rating needs a login, and the admin sees the pizza.
     Open QuickPizza
     Turn On Advanced
+    ${stamp}=    Get Current Date    result_format=%Y%m%d-%H%M%S
+    ${name}=    Set Variable    Lab Pizza ${stamp}
+    Fill In The Pizza Request    600    Knife    ${name}
+    Capture Page Screenshot    qp01-step3-fields.png
