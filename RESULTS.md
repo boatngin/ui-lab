@@ -32,8 +32,9 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.12.7 on darwin)
 - Step 3.2, failure message for the wrong title: `Title should have been 'Web Form' but was 'Web form'.` (1 test, 0 passed, 1 failed; SeleniumLibrary saved selenium-screenshot-1.png. With the title back to Web form: 1 test, 1 passed, 0 failed)
-- Step 3.8, run 1, result, elapsed time and pizza name:
-- Step 3.8, run 2, result, elapsed time and pizza name:
+- Step 3.8, run 1, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), started 12:30:35, elapsed 00:00:09.715, Lab Pizza 20261125-123041 (Tool: Scissors, Calories per slice: 600), evidence in `robot/results/run1`
+- Step 3.8, run 2, result, elapsed time and pizza name: PASS (1 test, 1 passed, 0 failed), started 12:30:45, elapsed 00:00:11.404, Lab Pizza 20261125-123052 (Tool: Pizza cutter, Calories per slice: 500), evidence in `robot/results/run2`
+- Note: while building Step 3.7, one visible-window run right after adding step 5 failed. I did not keep its log, and the next six runs (three headless, three visible) all passed. A likely cause is the pizza animation that flies over the buttons after Pizza, Please!, but I could not reproduce it.
 
 ## Part B
 1.
