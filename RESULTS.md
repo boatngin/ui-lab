@@ -10,17 +10,17 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 - Step 0.4, locator of Must be vegetarian: `#default-checkbox`, finds 1 element (its label reads Must be vegetarian)
 - Step 0.4, locator of Custom Pizza Name: `input#pizza-name`, finds 1 element. `#pizza-name` alone finds 2 after Pizza, Please!, because the heading of the answer has the same id
 - Step 0.4, `$$("#floating_filled").length` gave 3, and `//label[normalize-space()='Max Calories per Slice']/preceding-sibling::input` finds exactly 1 element
-- Step 0.5, pizza name, tool and calories of the run by hand:
+- Step 0.5, pizza name, tool and calories of the run by hand: Lab Pizza 20261125-121711, Tool: Scissors, Calories per slice: 400 (Dough: Thin)
 
 | Step | Actual result | Pass or fail |
 |------|---------------|--------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
+| 1 | The heading reads Looking to break out of your pizza routine? | Pass |
+| 2 | After Advanced is on, Max Calories per Slice (showing 1000), Excluded tools (Knife, Pizza cutter, Scissors), Must be vegetarian and Custom Pizza Name appear | Pass |
+| 3 | Max Calories per Slice shows 600 (1000 replaced), Knife is selected, Must be vegetarian is ticked, the name box shows Lab Pizza 20261125-121711 | Pass |
+| 4 | Name: Lab Pizza 20261125-121711, Tool: Scissors (not Knife), Calories per slice: 400 (600 or fewer) | Pass |
+| 5 | Please log in first. appears below the buttons (the rating request answered 401) | Pass |
+| 6 | TODO: open /admin, check that both boxes hold admin, click Sign in | TODO |
+| 7 | TODO: find the pizza name in Latest pizza recommendations and compare its tool | TODO |
 
 ## Part 2: Selenium WebDriver in Java
 - Step 2.4, the failure line for the wrong title:
