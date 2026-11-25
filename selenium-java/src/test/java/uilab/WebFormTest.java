@@ -50,6 +50,12 @@ class WebFormTest extends BaseTest {
         date.sendKeys("11/05/2026");
         date.sendKeys(Keys.ESCAPE);
 
+        // submit, then check the page that follows
+        driver.findElement(By.cssSelector("button[type=submit]")).click();
+        wait.until(ExpectedConditions.titleIs("Web form - target page"));
+        assertEquals("Received!",
+                driver.findElement(By.id("message")).getText());
+
         // Add the next part above this line.
     }
 }
