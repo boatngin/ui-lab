@@ -84,3 +84,9 @@ Log In As Admin
     Input Password    id:password    ${password}
     Click Button    css:button[type=submit]
     Wait Until Page Contains    Latest pizza recommendations
+
+Admin List Should Show The Pizza
+    [Documentation]    QP-01 step 7. Find the pizza and its tool.
+    [Arguments]    ${name}    ${tool}
+    Wait Until Page Contains    ${name}
+    Element Should Contain    xpath://li[contains(.,'${name}')]    ${tool}

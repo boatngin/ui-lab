@@ -21,3 +21,5 @@ QP-01 A Custom Pizza Reaches The Admin List
     Rate The Pizza Without Logging In
     Capture Page Screenshot    qp01-step5-login-needed.png
     Log In As Admin    admin    admin
+    Admin List Should Show The Pizza    ${name}    ${tool}
+    Capture Page Screenshot    qp01-step7-admin-list.png
