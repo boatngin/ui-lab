@@ -30,7 +30,7 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 - Step 2.20, full run 2, time and number of tests: 25 November 2026, finished 12:24:55, `Tests run: 5, Failures: 0, Errors: 0, Skipped: 0`, BUILD SUCCESS, total time 23.109 s (QP01PageObjectTest 8.272 s, pizza Lab Pizza 20261125-122434, screenshots in `selenium-java/screenshots/20261125-122434`, report in `selenium-java/reports/uilab.QP01PageObjectTest.txt`)
 
 ## Part 3: Robot Framework
-- robot --version:
+- robot --version: Robot Framework 7.5.1 (Python 3.12.7 on darwin)
 - Step 3.2, failure message for the wrong title:
 - Step 3.8, run 1, result, elapsed time and pizza name:
 - Step 3.8, run 2, result, elapsed time and pizza name:
