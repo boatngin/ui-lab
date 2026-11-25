@@ -26,8 +26,8 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 - Step 2.4, the failure line for the wrong title: `[ERROR]   FirstTest.webFormOpens:20 expected: <Web Form> but was: <Web form>` (BUILD FAILURE; after changing the title back to "Web form" the test passed again)
 - Step 2.15, QP01Test run 1, result and time: passed at 12:22:11 on 25 November 2026, `Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.434 s`, BUILD SUCCESS (Maven total 10.345 s)
 - Step 2.15, QP01Test run 2, result and time: passed at 12:22:22 on 25 November 2026, `Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.427 s`, BUILD SUCCESS (Maven total 9.739 s), with a new pizza name
-- Step 2.20, full run 1, time and number of tests:
-- Step 2.20, full run 2, time and number of tests:
+- Step 2.20, full run 1, time and number of tests: 25 November 2026, finished 12:24:31, `Tests run: 5, Failures: 0, Errors: 0, Skipped: 0`, BUILD SUCCESS, total time 23.589 s (QP01PageObjectTest 9.061 s, pizza Lab Pizza 20261125-122410, screenshots in `selenium-java/screenshots/20261125-122410`)
+- Step 2.20, full run 2, time and number of tests: 25 November 2026, finished 12:24:55, `Tests run: 5, Failures: 0, Errors: 0, Skipped: 0`, BUILD SUCCESS, total time 23.109 s (QP01PageObjectTest 8.272 s, pizza Lab Pizza 20261125-122434, screenshots in `selenium-java/screenshots/20261125-122434`, report in `selenium-java/reports/uilab.QP01PageObjectTest.txt`)
 
 ## Part 3: Robot Framework
 - robot --version:
