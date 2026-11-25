@@ -65,3 +65,8 @@ Recommendation Should Keep The Restrictions
     ${calories}=    Get Calories Per Slice
     Should Be True    ${calories} <= ${max calories}
     RETURN    ${tool}
+
+Rate The Pizza Without Logging In
+    [Documentation]    QP-01 step 5. Love it! asks for a login first.
+    Click Button    name:rate-5
+    Wait Until Element Contains    id:rate-result    Please log in first.
