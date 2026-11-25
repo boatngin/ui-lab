@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 class WaitTest extends BaseTest {
 
@@ -16,7 +17,8 @@ class WaitTest extends BaseTest {
     void addABox() {
         driver.get(PAGE);
         driver.findElement(By.id("adder")).click();
-        WebElement box = driver.findElement(By.id("box0"));
+        WebElement box = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.id("box0")));
         assertEquals("redbox", box.getDomAttribute("class"));
     }
 }
