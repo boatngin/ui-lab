@@ -37,3 +37,8 @@ Fill In The Pizza Request
     List Selection Should Be    css:select    ${tool}
     Checkbox Should Be Selected    id:default-checkbox
     Textfield Value Should Be    css:input#pizza-name    ${name}
+
+Ask For A Pizza
+    [Documentation]    QP-01 step 4. Click Pizza, Please! and wait.
+    Click Button    name:pizza-please
+    Wait Until Element Contains    id:recommendations    Name:
