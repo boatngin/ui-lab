@@ -24,8 +24,8 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 
 ## Part 2: Selenium WebDriver in Java
 - Step 2.4, the failure line for the wrong title: `[ERROR]   FirstTest.webFormOpens:20 expected: <Web Form> but was: <Web form>` (BUILD FAILURE; after changing the title back to "Web form" the test passed again)
-- Step 2.15, QP01Test run 1, result and time:
-- Step 2.15, QP01Test run 2, result and time:
+- Step 2.15, QP01Test run 1, result and time: passed at 12:22:11 on 25 November 2026, `Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.434 s`, BUILD SUCCESS (Maven total 10.345 s)
+- Step 2.15, QP01Test run 2, result and time: passed at 12:22:22 on 25 November 2026, `Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.427 s`, BUILD SUCCESS (Maven total 9.739 s), with a new pizza name
 - Step 2.20, full run 1, time and number of tests:
 - Step 2.20, full run 2, time and number of tests:
 
