@@ -4,7 +4,7 @@ Tool parts that I chose: Part 2 (Selenium WebDriver in Java) and Part 3 (Robot F
 
 ## Part 0
 - Step 0.1, Chrome version: Google Chrome 158.0.8127.88 (Official Build) (arm64)
-- Step 0.3, ChromeDriver version:
+- Step 0.3, ChromeDriver version: ChromeDriver 158.0.8127.88 (0cefb18236a23db1ebb6b2bc040fbbaf8cbe759e-refs/branch-heads/8127_36@{#32}), at ~/drivers/chromedriver-mac-arm64/chromedriver, platform mac-arm64
 - Step 0.4, locator of Pizza, Please!:
 - Step 0.4, locator of Excluded tools:
 - Step 0.4, locator of Must be vegetarian:
