@@ -23,3 +23,7 @@ Every Kind Of Field
     Select Radio Button    my-radio    my-radio-2
     Input Text    name:my-date    11/05/2026
     Textfield Value Should Be    name:my-date    11/05/2026
+    Click Button    css:button[type=submit]
+    Wait Until Element Is Visible    id:message
+    Title Should Be    Web form - target page
+    Element Text Should Be    id:message    Received!
